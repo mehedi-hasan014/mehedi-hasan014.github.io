@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mehedi Hasan · Personal Bio</title>
-  <!-- Font Awesome 6 (free) -->
+  <title>Md. Mehedi Hasan · Academic Bio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
@@ -14,124 +13,112 @@
     }
 
     body {
-      background: linear-gradient(135deg, #f9faff 0%, #eef1fa 100%);
+      background: #f4f6fb;
       font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
       color: #1e1e2f;
-      line-height: 1.6;
-      scroll-behavior: smooth;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* smooth animations & transitions */
     .container {
-      max-width: 1200px;
-      margin: 2.5rem auto;
-      padding: 0 2rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
     }
 
-    /* cards & sections */
     .card {
-      background: rgba(255, 255, 255, 0.75);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-radius: 2.5rem;
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1), 0 4px 18px rgba(0, 0, 0, 0.03);
-      padding: 2.2rem 2.5rem;
-      margin-bottom: 2.2rem;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
-      animation: fadeUp 0.7s ease forwards;
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0,0,0,0.02);
+      padding: 1.7rem 2rem;
+      margin-bottom: 1.3rem;
+      border: 1px solid rgba(255,255,255,0.7);
+      transition: all 0.25s ease;
+      animation: fadeUp 0.45s ease forwards;
     }
 
     .card:hover {
-      box-shadow: 0 28px 48px -12px rgba(28, 35, 70, 0.2);
-      transform: translateY(-6px);
-      border-color: rgba(100, 120, 255, 0.3);
-      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 16px 30px -10px rgba(0, 0, 0, 0.1);
+      transform: translateY(-3px);
+      border-color: rgba(79, 70, 229, 0.1);
     }
 
     @keyframes fadeUp {
-      0% { opacity: 0; transform: translateY(24px); }
+      0% { opacity: 0; transform: translateY(10px); }
       100% { opacity: 1; transform: translateY(0); }
     }
 
-    h1, h2, h3 {
+    h2 {
+      font-size: 1.5rem;
       font-weight: 600;
       letter-spacing: -0.02em;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       display: flex;
       align-items: center;
-      gap: 0.7rem;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.06);
-      padding-bottom: 0.6rem;
+      gap: 0.6rem;
+      border-bottom: 1.5px solid #eceef5;
+      padding-bottom: 0.5rem;
+      color: #1e1b4b;
     }
 
     h2 i {
       color: #4f46e5;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
     }
 
     .profile-header {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 2.5rem;
-      margin-bottom: 2rem;
+      gap: 1.5rem;
     }
 
     .profile-photo {
-      width: 150px;
-      height: 150px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid white;
-      box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.25);
-      transition: transform 0.4s ease, box-shadow 0.3s;
+      border: 3px solid white;
+      box-shadow: 0 8px 16px -4px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      background: #e0e7ff;
     }
 
     .profile-photo:hover {
-      transform: scale(1.04) rotate(1deg);
-      box-shadow: 0 18px 36px -8px rgba(79, 70, 229, 0.4);
+      transform: scale(1.05);
     }
 
     .title-name {
-      font-size: 2.8rem;
+      font-size: 2.1rem;
       font-weight: 700;
-      background: linear-gradient(135deg, #1e1b4b, #4f46e5);
+      background: linear-gradient(130deg, #1e1b4b, #4f46e5);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.2rem;
     }
 
     .subtitle {
-      font-size: 1.2rem;
+      font-size: 0.95rem;
       color: #4b5563;
       font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
     }
 
     .badge-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.6rem;
-      margin: 0.8rem 0;
+      gap: 0.4rem;
+      margin: 0.6rem 0;
     }
 
     .badge {
-      background: #e0e7ff;
+      background: #eef2ff;
       color: #3730a3;
-      padding: 0.3rem 1rem;
+      padding: 0.25rem 0.9rem;
       border-radius: 30px;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       font-weight: 500;
       transition: all 0.2s;
-      cursor: default;
     }
 
     .badge:hover {
@@ -144,310 +131,354 @@
       background: #1e1b4b;
       color: white;
       border: none;
-      padding: 0.9rem 2rem;
+      padding: 0.6rem 1.5rem;
       border-radius: 40px;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 0.85rem;
       display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.5rem;
       cursor: pointer;
-      transition: all 0.3s;
-      box-shadow: 0 10px 18px -8px #1e1b4b;
-      letter-spacing: 0.3px;
-      margin-top: 1.2rem;
-      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.25s;
+      box-shadow: 0 6px 14px -5px #1e1b4b60;
+      margin-top: 0.6rem;
+      text-decoration: none;
     }
 
     .download-btn:hover {
       background: #312e81;
-      transform: translateY(-3px);
-      box-shadow: 0 16px 26px -8px #312e81;
-      gap: 0.9rem;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -6px #312e81;
     }
 
-    /* grid layout */
     .grid-2col {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.8rem;
-      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+      margin-top: 0.3rem;
     }
 
-    .list-item {
-      padding: 0.7rem 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    .compact-list {
+      list-style: none;
+    }
+
+    .compact-list li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid #f0f0f4;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
       transition: padding-left 0.2s, background 0.2s;
-      border-radius: 12px;
+      border-radius: 8px;
+      padding-left: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .compact-list li:hover {
+      background: #f8faff;
       padding-left: 0.8rem;
     }
 
-    .list-item:hover {
-      background: rgba(79, 70, 229, 0.04);
-      padding-left: 1.2rem;
-    }
-
-    .list-item i {
-      width: 1.8rem;
+    .compact-list i {
+      width: 1.3rem;
       color: #4f46e5;
+      font-size: 0.85rem;
+      margin-top: 0.2rem;
     }
 
-    .publication, .project-item {
-      background: white;
-      border-radius: 1.3rem;
-      padding: 1.2rem 1.4rem;
-      margin-bottom: 0.9rem;
-      transition: all 0.25s;
-      border: 1px solid rgba(0, 0, 0, 0.02);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    .publication-item, .project-item {
+      background: #fafbff;
+      border-radius: 0.9rem;
+      padding: 0.8rem 1rem;
+      margin-bottom: 0.6rem;
+      transition: all 0.2s;
+      border: 1px solid #f0f0f4;
+      font-size: 0.9rem;
     }
 
-    .publication:hover, .project-item:hover {
-      background: #fafaff;
-      transform: translateX(8px);
-      box-shadow: 0 8px 20px -8px rgba(0,0,0,0.1);
+    .publication-item:hover, .project-item:hover {
+      background: #f0f3ff;
+      transform: translateX(5px);
+      box-shadow: 0 4px 10px -4px rgba(0,0,0,0.06);
+    }
+
+    .pub-title {
+      font-weight: 600;
+      color: #1e1b4b;
+    }
+
+    .pub-meta {
+      color: #4b5563;
+      font-size: 0.8rem;
     }
 
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 0.7rem;
+      margin-top: 0.6rem;
     }
 
     .gallery-img {
       width: 100%;
-      height: 120px;
+      height: 75px;
       object-fit: cover;
-      border-radius: 20px;
+      border-radius: 12px;
       cursor: pointer;
-      transition: all 0.35s;
-      filter: saturate(0.85);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+      transition: all 0.3s;
+      filter: saturate(0.9);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.04);
     }
 
     .gallery-img:hover {
-      transform: scale(1.05);
-      filter: saturate(1.2);
-      box-shadow: 0 14px 24px -6px rgba(0,0,0,0.2);
-      z-index: 2;
+      transform: scale(1.04);
+      filter: saturate(1.1);
+      box-shadow: 0 6px 14px -3px rgba(0,0,0,0.12);
     }
 
     .footer-note {
       text-align: center;
-      padding: 1.5rem;
-      color: #4b5563;
-      font-size: 0.9rem;
+      padding: 0.8rem;
+      color: #6b7280;
+      font-size: 0.8rem;
     }
 
     a {
       color: #4f46e5;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.2s;
     }
 
     a:hover {
+      color: #1e1b4b;
       text-decoration: underline;
     }
 
+    .subsection-title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      color: #1e1b4b;
+    }
+
     @media (max-width: 600px) {
-      .container { padding: 0 1rem; }
+      .container { padding: 0 0.7rem; }
       .profile-header { flex-direction: column; text-align: center; }
-      .card { padding: 1.8rem 1.5rem; }
+      .card { padding: 1.2rem 1rem; }
+      .title-name { font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     
-    <!-- PROFILE HEADER CARD -->
-    <div class="card" style="animation-delay: 0.1s;">
+    <!-- HEADER / PROFILE -->
+    <div class="card" style="animation-delay: 0.03s;">
       <div class="profile-header">
-        <!-- user photo placeholder: replace with your image URL -->
-        <img src="https://avatars.githubusercontent.com/u/58309832?v=4" alt="Mehedi Hasan" class="profile-photo" 
+        <img src="mehedi_sir2.jfif" alt="Md. Mehedi Hasan" class="profile-photo" 
              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%234f46e5%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2235%22 fill=%22white%22 text-anchor=%22middle%22%3EMH%3C/text%3E%3C/svg%3E'">
         <div>
-          <div class="title-name">Mehedi Hasan</div>
-          <div class="subtitle"><i class="fas fa-laptop-code"></i> Researcher · Developer · Innovator</div>
+          <div class="title-name">Md. Mehedi Hasan</div>
+          <div class="subtitle"><i class="fas fa-map-marker-alt" style="margin-right:4px;"></i> Boyra, Khulna-9203, Bangladesh</div>
           <div class="badge-container">
-            <span class="badge"><i class="fas fa-flask"></i> Machine Learning</span>
-            <span class="badge"><i class="fas fa-code"></i> Full-Stack</span>
-            <span class="badge"><i class="fas fa-chart-line"></i> Data Science</span>
-            <span class="badge"><i class="fas fa-graduation-cap"></i> PhD Candidate</span>
+            <span class="badge">Power Systems</span>
+            <span class="badge">Smart Grids</span>
+            <span class="badge">Renewable Energy</span>
+            <span class="badge">Lecturer</span>
           </div>
-          <button class="download-btn" id="downloadCvBtn"><i class="fas fa-file-pdf"></i> Download CV</button>
+          <div style="font-size:0.85rem; color:#4b5563; margin-bottom:0.4rem;">
+            <i class="fas fa-envelope"></i> mhasan@kkbau.ac.bd · <i class="fas fa-phone"></i> +8801885172091
+          </div>
+          <a href="CV.pdf" download class="download-btn" id="downloadCvBtn">
+            <i class="fas fa-file-arrow-down"></i> Download CV (PDF)
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- ABOUT / BIO -->
+    <!-- ACADEMIC CREDENTIALS / EDUCATION -->
+    <div class="card" style="animation-delay: 0.06s;">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="grid-2col">
+        <div>
+          <div class="subsection-title">B.Sc. in EEE</div>
+          <ul class="compact-list">
+            <li><i class="fas fa-university"></i> Pabna University of Science & Technology (PUST)</li>
+            <li><i class="fas fa-calendar"></i> March 2018 – April 2024</li>
+            <li><i class="fas fa-chart-line"></i> CGPA: 3.85/4.00 · Ranked 1st of 43</li>
+            <li><i class="fas fa-book"></i> Thesis: Management of EVs for Mitigating Unbalance in LV Grid</li>
+            <li><i class="fas fa-user-tie"></i> Supervisor: Md. Rabiul Islam, Ph.D</li>
+          </ul>
+        </div>
+        <div>
+          <div class="subsection-title">M.Sc. Eng. in EEE</div>
+          <ul class="compact-list">
+            <li><i class="fas fa-university"></i> Khulna University of Engineering & Technology (KUET)</li>
+            <li><i class="fas fa-calendar"></i> July 2024 – Present</li>
+            <li><i class="fas fa-chart-line"></i> CGPA: 3.83/4.00 · Expected 2026</li>
+            <li><i class="fas fa-book"></i> Thesis: Multi-Level Control for PV-Integrated Distribution</li>
+            <li><i class="fas fa-user-tie"></i> Supervisor: Naruttam Kumar Roy, Ph.D</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESEARCH INTEREST & TEACHING -->
+    <div class="card" style="animation-delay: 0.09s;">
+      <h2><i class="fas fa-flask"></i> Research & Teaching</h2>
+      <div class="grid-2col">
+        <div>
+          <div class="subsection-title"><i class="fas fa-microscope"></i> Research Interests</div>
+          <ul class="compact-list">
+            <li><i class="fas fa-bolt"></i> Power System Stability</li>
+            <li><i class="fas fa-network-wired"></i> Smart Grids</li>
+            <li><i class="fas fa-solar-panel"></i> Renewable Energy Integration</li>
+            <li><i class="fas fa-car"></i> Electric Vehicle</li>
+            <li><i class="fas fa-city"></i> Microgrid</li>
+          </ul>
+        </div>
+        <div>
+          <div class="subsection-title"><i class="fas fa-chalkboard-user"></i> Teaching</div>
+          <ul class="compact-list">
+            <li><i class="fas fa-building"></i> Lecturer, Dept. of EEE — Khulna Khan Bahadur Ahsanullah University</li>
+            <li><i class="fas fa-calendar"></i> September 2024 – Present</li>
+            <li><i class="fas fa-link"></i> <a href="https://www.kkbau.ac.bd/md-mehedi-eee/">Faculty Profile</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <div class="card" style="animation-delay: 0.12s;">
+      <h2><i class="fas fa-book-open"></i> Publications</h2>
+      <div class="subsection-title" style="margin-top:0.5rem;">Journal Articles</div>
+      <div class="publication-item">
+        <span class="pub-title">Design and techno-economic validation of a university campus hybrid microgrid</span><br>
+        <span class="pub-meta">Hasan, M.M.*, Refat, K.A., Ali, M.F. et al. Sci Rep 16, 17248 (2026). <a href="#">Link</a></span>
+      </div>
+      <div class="publication-item">
+        <span class="pub-title">Sustainable charging framework: Solar wireless EV charging enhanced with MPPT control</span><br>
+        <span class="pub-meta">Md. Galib Hasan, et al. Energy Reports, Vol 15, 2026. <a href="#">Link</a></span>
+      </div>
+      <div class="publication-item">
+        <span class="pub-title">A Unified Framework for Hybrid Renewable Energy Microgrid Planning</span><br>
+        <span class="pub-meta">Swopnil Das, Md. Mehedi Hasan* et al. Int. J. Energy Res. (Under Review)</span>
+      </div>
+      <div class="publication-item">
+        <span class="pub-title">Hierarchical Control Framework for Voltage Unbalance in PV-Rich LV Networks</span><br>
+        <span class="pub-meta">M.M.Hasan, A.H.Shakil et al. (Submitted)</span>
+      </div>
+      <div class="publication-item">
+        <span class="pub-title">Optimal Phase Placement and PV Curtailment for Voltage Unbalance</span><br>
+        <span class="pub-meta">M.M.Hasan et al. (Submitted)</span>
+      </div>
+
+      <div class="subsection-title" style="margin-top:0.8rem;">Conference Proceedings</div>
+      <div class="publication-item">
+        <span class="pub-title">Management of EVs for Mitigating Unbalance in LV Grid</span> — ICEEICT 2024<br>
+        <span class="pub-meta">M.M.Hasan, M.A.Yousuf, M.R.Islam · Dhaka, Bangladesh</span>
+      </div>
+      <div class="publication-item">
+        <span class="pub-title">Develop a Method for Mitigating Unbalance Considering EV Users Needs</span> — QPAIN 2025<br>
+        <span class="pub-meta">M.R.Rashid, M.M.Hasan* et al. · Rangpur, Bangladesh</span>
+      </div>
+      <div class="publication-item">
+        <span class="pub-title">Mitigating Unbalance Due to EV Dispatch</span> — PEEIACON 2024<br>
+        <span class="pub-meta">M.M.Hasan, M.R.Islam, M.A.Yousuf · Rajshahi, Bangladesh</span>
+      </div>
+      <div class="publication-item">
+        <span class="pub-title">Coordinated Phase Rebalancing of Rooftop PV</span> — PECCII 2026 (Presented)
+      </div>
+      <div class="publication-item">
+        <span class="pub-title">Optimal Capacitor Placement in Unbalanced Distribution</span> — PECCII 2026 (Presented)
+      </div>
+      <div class="publication-item">
+        <span class="pub-title">Grid-Connected Hybrid Renewable Microgrid for Bangladesh</span> — PECCII 2026 (Presented)
+      </div>
+      <div class="publication-item">
+        <span class="pub-title">Techno-Economic Optimization of PV-Wind-BESS Microgrid</span> — PECCII 2026 (Presented)
+      </div>
+    </div>
+
+    <!-- SKILLS & PROJECTS -->
     <div class="card" style="animation-delay: 0.15s;">
-      <h2><i class="fas fa-user-astronaut"></i> About</h2>
-      <p style="font-size: 1.1rem;">Passionate researcher and engineer with focus on applied ML, human-centered AI, and scalable web systems. I love turning complex problems into elegant solutions. Currently exploring multimodal learning and open-source contributions.</p>
-      <p style="margin-top: 0.8rem;"><i class="fas fa-map-pin"></i> Dhaka, Bangladesh · Open to collaborations</p>
-    </div>
-
-    <!-- RESEARCH & PUBLICATIONS -->
-    <div class="card" style="animation-delay: 0.2s;">
-      <h2><i class="fas fa-book-open"></i> Research & Publications</h2>
-      <div class="publication">
-        <strong><i class="fas fa-file-alt"></i> "Explainable AI for Bengali Sentiment Analysis"</strong> — <em>ACL Workshop, 2025</em><br>
-        <span style="font-size: 0.9rem; color: #444;">Hasan, M., Rahman, A. · DOI: 10.1234/xyz</span>
-      </div>
-      <div class="publication">
-        <strong><i class="fas fa-file-alt"></i> "Efficient Transformers for Edge Devices"</strong> — <em>NeurIPS small, 2024</em><br>
-        <span style="font-size: 0.9rem;">Hasan, M., et al.</span>
-      </div>
-      <div class="publication">
-        <strong><i class="fas fa-file-alt"></i> "Urban Sound Classification using CNNs"</strong> — <em>IEEE TENSYMP 2023</em>
-      </div>
-      <p style="margin-top: 1rem;"><a href="#"><i class="fas fa-external-link-alt"></i> Full list on Google Scholar</a></p>
-    </div>
-
-    <!-- PROJECTS (highlight) -->
-    <div class="card" style="animation-delay: 0.25s;">
-      <h2><i class="fas fa-rocket"></i> Featured Projects</h2>
-      <div class="grid-2col">
-        <div class="project-item">
-          <h3><i class="fas fa-robot"></i> mediAssist AI</h3>
-          <p>Smart medical chatbot with symptom analysis & appointment integration. (React, FastAPI, PyTorch)</p>
-          <span class="badge">Open-source</span>
-        </div>
-        <div class="project-item">
-          <h3><i class="fas fa-camera-retro"></i> SnapSort</h3>
-          <p>AI-powered photo organizer using zero-shot learning. 15k+ downloads.</p>
-          <span class="badge">Python</span>
-        </div>
-        <div class="project-item">
-          <h3><i class="fas fa-chart-pie"></i> DataViz Suite</h3>
-          <p>Interactive dashboard framework for real-time analytics (D3.js + WebSockets).</p>
-        </div>
-        <div class="project-item">
-          <h3><i class="fas fa-language"></i> BanglaNLP Toolkit</h3>
-          <p>Preprocessing & augmentation library for low-resource languages.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- SKILLS & EXPERTISE / EXPERIENCE two columns -->
-    <div class="card" style="animation-delay: 0.3s;">
-      <h2><i class="fas fa-cogs"></i> Skills & Expertise</h2>
+      <h2><i class="fas fa-cogs"></i> Skills & Projects</h2>
       <div class="grid-2col">
         <div>
-          <h3 style="margin-bottom: 0.5rem;"><i class="fas fa-code"></i> Technical</h3>
-          <ul style="list-style: none;">
-            <li class="list-item"><i class="fab fa-python"></i> Python (Pandas, PyTorch, TensorFlow)</li>
-            <li class="list-item"><i class="fab fa-js"></i> JavaScript/TypeScript, React, Node.js</li>
-            <li class="list-item"><i class="fas fa-database"></i> SQL, MongoDB, Redis</li>
-            <li class="list-item"><i class="fas fa-cloud"></i> AWS, Docker, CI/CD</li>
-            <li class="list-item"><i class="fas fa-brain"></i> LLM, NLP, Computer Vision</li>
+          <div class="subsection-title"><i class="fas fa-code"></i> Technical Skills</div>
+          <ul class="compact-list">
+            <li><i class="fab fa-cuttlefish"></i> C, C++, MATLAB, Python</li>
+            <li><i class="fas fa-drafting-compass"></i> Visio, Edraw Max, PVsyst, Simulink</li>
+            <li><i class="fas fa-file-excel"></i> Excel, PowerPoint, Word</li>
+          </ul>
+          <div class="subsection-title" style="margin-top:0.8rem;"><i class="fas fa-tasks"></i> Projects</div>
+          <ul class="compact-list">
+            <li><i class="fas fa-leaf"></i> Rice Leaf Disease Detection (Transfer Learning) <a href="#">Link</a></li>
+            <li><i class="fas fa-virus"></i> Dengue Outbreak Prediction & Analysis <a href="#">Link</a></li>
+            <li><i class="fas fa-sun"></i> Solar Energy Forecasting using ML <a href="#">Link</a></li>
+            <li><i class="fas fa-brain"></i> Alzheimer's Detection in MRI (Deep Learning) <a href="#">Link</a></li>
           </ul>
         </div>
         <div>
-          <h3 style="margin-bottom: 0.5rem;"><i class="fas fa-briefcase"></i> Experience</h3>
-          <ul style="list-style: none;">
-            <li class="list-item"><strong>AI Research Intern</strong> — Infolytx (2024 - present)</li>
-            <li class="list-item"><strong>Full Stack Developer</strong> — TechNova (2022 - 2024)</li>
-            <li class="list-item"><strong>Undergrad TA</strong> — BUET CSE (2021 - 2023)</li>
-            <li class="list-item"><strong>Freelance ML consultant</strong> — Upwork (2020+)</li>
+          <div class="subsection-title"><i class="fas fa-briefcase"></i> Internship & Awards</div>
+          <ul class="compact-list">
+            <li><i class="fas fa-building"></i> Intern, Rajbari Palli Bidyut Samity (Apr–Jun 2023)</li>
+            <li><i class="fas fa-certificate"></i> ML Specialization Certificate – Coursera (2024)</li>
+            <li><i class="fas fa-award"></i> Academic Merit Scholarship (B.Sc.)</li>
+            <li><i class="fas fa-users"></i> CRID Member – AI, Image Processing</li>
+            <li><i class="fas fa-hand-holding-heart"></i> Organizing Secretary, Jonaki (2022-23)</li>
+            <li><i class="fas fa-robot"></i> Science Club Coordinator, S.B.G. College</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- EDUCATION & AWARDS two columns -->
-    <div class="card" style="animation-delay: 0.35s;">
-      <h2><i class="fas fa-graduation-cap"></i> Education & Awards</h2>
-      <div class="grid-2col">
-        <div>
-          <h3 style="margin-bottom: 0.3rem;"><i class="fas fa-university"></i> Education</h3>
-          <ul style="list-style: none;">
-            <li class="list-item"><strong>Ph.D. in Computer Science</strong> — BUET (2024–present)</li>
-            <li class="list-item"><strong>M.Sc. in CSE</strong> — University of Dhaka, 2023</li>
-            <li class="list-item"><strong>B.Sc. in CSE</strong> — BUET, 2020</li>
-          </ul>
-        </div>
-        <div>
-          <h3 style="margin-bottom: 0.3rem;"><i class="fas fa-trophy"></i> Awards</h3>
-          <ul style="list-style: none;">
-            <li class="list-item"><i class="fas fa-medal"></i> Best Paper Award — ICLR workshop 2024</li>
-            <li class="list-item"><i class="fas fa-award"></i> Prime Minister's Gold Medal (2020)</li>
-            <li class="list-item"><i class="fas fa-star"></i> Google PhD Fellowship (2025)</li>
-            <li class="list-item"><i class="fas fa-code-branch"></i> Hackathon Winner — CodeSummit 2023</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- CONTACT & GALLERY (combined) -->
-    <div class="card" style="animation-delay: 0.4s;">
-      <h2><i class="fas fa-address-book"></i> Contact</h2>
+    <!-- CONTACT & REFERENCES -->
+    <div class="card" style="animation-delay: 0.18s;">
+      <h2><i class="fas fa-address-card"></i> Contact & References</h2>
       <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between;">
-        <div style="min-width: 200px;">
-          <p><i class="fas fa-envelope"></i> <a href="mailto:mehedi.hasan@example.com">mehedi.hasan@example.com</a></p>
-          <p><i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/mehedi014</a></p>
-          <p><i class="fab fa-github"></i> <a href="https://github.com/mehedi-hasan014" target="_blank">github.com/mehedi-hasan014</a></p>
-          <p><i class="fab fa-twitter"></i> @mehedi_ai</p>
+        <div style="min-width: 180px;">
+          <p style="margin-bottom:0.3rem;"><i class="fas fa-envelope" style="width:1.5rem;"></i> mhasan@kkbau.ac.bd</p>
+          <p style="margin-bottom:0.3rem;"><i class="fab fa-linkedin" style="width:1.5rem;"></i> <a href="#">LinkedIn</a></p>
+          <p style="margin-bottom:0.3rem;"><i class="fab fa-github" style="width:1.5rem;"></i> <a href="https://github.com/mehedi-hasan014">GitHub</a></p>
+          <p><i class="fas fa-phone" style="width:1.5rem;"></i> +8801885172091</p>
         </div>
-        <div style="flex:1;">
-          <h3 style="margin-bottom: 0.8rem;"><i class="fas fa-images"></i> Gallery / Moments</h3>
-          <div class="gallery-grid">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=200&fit=crop" alt="gallery1" class="gallery-img">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=300&h=200&fit=crop" alt="gallery2" class="gallery-img">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&h=200&fit=crop" alt="gallery3" class="gallery-img">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&h=200&fit=crop" alt="gallery4" class="gallery-img">
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&h=200&fit=crop" alt="gallery5" class="gallery-img">
-          </div>
+        <div style="flex:1; min-width:200px;">
+          <div class="subsection-title"><i class="fas fa-user-tie"></i> References</div>
+          <p style="font-size:0.85rem;"><strong>Md. Rabiul Islam</strong> – Assoc. Prof., PUST<br>Email: nkroy@eee.kuet.ac.bd · +61 405 169 763</p>
+          <p style="font-size:0.85rem; margin-top:0.4rem;"><strong>Naruttam Kumar Roy</strong> – Professor, KUET<br>Email: (not provided) · +8801716610537</p>
         </div>
       </div>
     </div>
 
     <div class="footer-note">
-      ✦ Mehedi Hasan · crafted with <i class="fas fa-heart" style="color: #4f46e5;"></i> & smooth UI ✦
+      ✦ Md. Mehedi Hasan · Power Systems Researcher & Lecturer ✦
     </div>
   </div>
 
   <script>
     (function() {
-      // Smooth animation trigger (already in css via fadeUp on .card)
-      // Add extra hover effects if needed, but CSS covers it.
-      
-      // Download CV button handler: create a dummy text file or link to actual file
+      // The download button is now a direct link to CV.pdf with download attribute
+      // Optional: add a subtle click feedback
       const downloadBtn = document.getElementById('downloadCvBtn');
       if (downloadBtn) {
         downloadBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          // Create a dummy CV text blob (in real life you'd point to actual PDF)
-          const cvContent = `Mehedi Hasan - CV\n\nEducation: PhD (BUET)\nResearch: ML, NLP\nExperience: AI Researcher\n\nContact: mehedi.hasan@example.com`;
-          const blob = new Blob([cvContent], { type: 'text/plain' });
-          const url = URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = 'Mehedi_Hasan_CV.txt';  // change to .pdf if needed
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-          URL.revokeObjectURL(url);
-          
-          // little animation feedback
-          downloadBtn.innerHTML = '<i class="fas fa-check-circle"></i> Downloaded!';
+          // Allow natural download; just add visual feedback
+          const originalText = downloadBtn.innerHTML;
+          downloadBtn.innerHTML = '<i class="fas fa-check"></i> Opening CV...';
           setTimeout(() => {
-            downloadBtn.innerHTML = '<i class="fas fa-file-pdf"></i> Download CV';
-          }, 2000);
+            downloadBtn.innerHTML = originalText;
+          }, 1500);
         });
       }
 
-      // Optional: gallery image click alert/lightbox (simple)
       const galleryImages = document.querySelectorAll('.gallery-img');
       galleryImages.forEach(img => {
         img.addEventListener('click', () => {
-          // simple preview action, can be replaced with lightbox
-          alert('✨ Gallery image preview: ' + img.alt);
+          alert('✨ Preview: ' + img.alt);
         });
       });
-
-      // Add extra hover smoothness: change cursor
-      console.log('✨ Bio website ready. Enjoy smooth interactions!');
     })();
   </script>
 </body>
